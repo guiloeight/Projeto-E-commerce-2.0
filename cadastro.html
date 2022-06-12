@@ -104,16 +104,24 @@
             <input type="password" class="form-control" id="inputPassword4">
           </div>
           <div class="col-md-4">
-            <label for="inputAddress" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <label for="inputCEP" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="inputCEP" placeholder="1234 Main St">
           </div>
           <div class="col-12">
-            <label for="inputAddress2" class="form-label">Rua</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="inputStreet" class="form-label">Rua</label>
+            <input type="text" class="form-control" id="inputStreet" placeholder="Apartment, studio, or floor">
           </div>
           <div class="col-md-6">
             <label for="inputCity" class="form-label">Cidade</label>
             <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-6">
+            <label for="inputDistrict" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="inputDistrict">
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Estado</label>
+            <input type="text" class="form-control" id="inputState">
           </div>
           <div class="col-md-6">
             <label for="inputNumber" class="form-label">Número</label>
@@ -123,13 +131,7 @@
             <label for="inputComplemento" class="form-label">Complemento</label>
             <input type="text" class="form-control" id="inputComplemento">
           </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">Estado</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
+          
           <!-- <div class="col-md-2">
             <label for="inputZip" class="form-label">Zip</label>
             <input type="text" class="form-control" id="inputZip">
@@ -163,7 +165,10 @@
 
 
 
+<script src="https://unpkg.com/imask"></script>
+<script type="text/javascript" src="/js/api.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
 </body>
 </html>
