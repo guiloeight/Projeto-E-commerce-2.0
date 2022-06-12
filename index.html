@@ -4,98 +4,221 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link href="http://fonts.cdnfonts.com/css/sensations-and-qualities" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel-rtl/">
   
-  
-  
-  <title>Feito por mim</title>
-</head>
+  <!-- Conexão Boostrap -->
 
-<body>
-  <header id="cabecalo">
-  <nav class="navbar navbar-expand-lg bg-light">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="/docs/5.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+  <!-- Favicons -->
+
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+  <!-- CSS -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/carousel.css" rel="stylesheet">
+   
+    <!-- Estilo fontes -->
+   
+   <style>
+      @font-face {
+          font-family:'Sensation';
+          src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
+      }
+      
+      @font-face {
+          font-family: 'OpenSans';
+          src: url(assets/OpenSans.ttf);
+      }
+  </style>
+
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+
+  <title>Feito por mim</title>
+  
+</head>
+       
+<header>
+  <nav class="navbar navbar-expand-md fixed-top bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Feito por mim</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="تبديل التنقل">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Produtos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Artistas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cadastre-se</a>
+            <a class="nav-link disabled">Cadastre-se</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Produtos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Gravuras</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          </ul>
-        </div>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Encontre aqui" aria-label="Procurar">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/her.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/vaidartudocerto.png" alt="">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Compre com nossos principais artistas</h1>
+            <p>Aqui você compra suas obras preferidas</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Clique aqui</a></p>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/lisasimpsom.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+        <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/lisasimpsom.png" alt="">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Faça seu cadastro</h1>
+            <p>10% de desconto na primeira compra</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Pegar meu cupom</a></p>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/vaidartudocerto.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+        <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/her.png" alt="">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Venda sua arte</h1>
+            <p>Aqui você tem a oportunidade de encontrar mais clientes</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Começe a vender</a></p>
+          </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">السابق</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">التالي</span>
     </button>
   </div>
 
 
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/assets/artista1.png" alt="">
+
+        <h2 class="fw-normal">Gabriela Cruz</h2>
+        <p>Descubra mais sobre essa artista Peruana</p>
+        <p><a class="btn btn-secondary" href="#">Saber mais</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/assets/artista2.png" alt="">
+        <h2 class="fw-normal">Guilherme Batista</h2>
+        <p>Descubra mais sobre o artista Brasileiro</p>
+        <p><a class="btn btn-secondary" href="#">Saber mais</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/assets/artista4.png" alt="">
+        
+        <h2 class="fw-normal">Daniela Braga</h2>
+        <p>Descubra mais sobre a artista</p>
+        <p><a class="btn btn-secondary" href="#">Saber mais</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
 
 
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Escudo Peruano<span class="text-muted"></span></h2>
+        <p class="lead"> O Peru é um país da América do Sul que abriga uma parte da Floresta Amazônica e Machu Picchu, uma antiga cidade inca na cordilheira dos Andes. A região ao redor de Machu Picchu, que abrange o Vale Sagrado dos Incas, o Camino Inca e a cidade colonial de Cusco, é rica em sítios arqueológicos. Na costa árida do Pacífico fica Lima, a capital, com um centro colonial preservado e coleções importantes de arte pré-colombiana. </p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Imagens home/1.png" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Lisa Simpson<span class="text-muted"></span></h2>
+        <p class="lead"> Lisa Marie Simpson é uma personagem fictícia da série animada de televisão Os Simpsons. Ela é a filha do meio e a mais talentosa da família Simpson. Dublado por Yeardley Smith, Lisa nasceu como um personagem no The Tracey Ullman Show curta "Good Night" em 19 de abril de 1987.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Imagens home/4.png" alt="">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Mickey Mouse<span class="text-muted"></span></h2>
+        <p class="lead"> Mickey Mouse é um personagem de desenho animado e que se tornou o símbolo da Walt Disney Company. O personagem foi criado em 1928 por Walt Disney e o desenhista Ub Iwerks e dublado por Walt Disney.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Imagens home/5.png" alt="">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>&copy; 2017–2022 Feito por mim Company, Inc. &middot;</p>
+   
+    <!-- Facebook -->
+    <a class="btn btn-primary" style="background-color: #3b5998;"  href="#" role="button">
+    <i class="fab fa-facebook-f"></i> 
+    </a>
+
+    
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
