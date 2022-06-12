@@ -1,12 +1,34 @@
-.navbar div{
+.container-fluid .navbar-brand{
   font-family:'Sensation';
-          src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
-  font-size: 25px;
+  src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
+  font-size: 43px;
   color: #c0a9e2;
 }
+
+.nav-link {
+  font-family:'Sensation';
+  src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
+  font-size: 15px;
+  color: #c0a9e2;
+}
+
 .navbar a{
+  font-family:'Sensation';
+  src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
+  font-size: 30px;
+  color: #c0a9e2;
+
+
   font-size: 25px;
 }
+
+.d-flex .form-control {
+  font-family: 'OpenSans';
+  src: url(assets/OpenSans.ttf);
+  font-size: 13px;
+  color: #c0a9e2;
+}
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -24,10 +46,10 @@
 
 .b-example-divider {
   height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, 0.733);
+  border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, 0.1), inset 0 .125em .5em rgba(0, 0, 0, 0.15);
 }
 
 .b-example-vr {
@@ -58,4 +80,5 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
 
