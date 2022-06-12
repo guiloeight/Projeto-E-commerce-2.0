@@ -65,10 +65,7 @@
             <a class="nav-link" href="/cadastro.html">Cadastre-se</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Encontre aqui" aria-label="Procurar">
-          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-        </form>
+        
       </div>
     </div>
   </nav>
@@ -84,17 +81,15 @@
       <div class="col">
         <!-- Coluna de separação vazia -->
       </div>
-      <div class="col-md-auto">
-        <div class="row g-3">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Primeiro Nome" aria-label="First name" autofocus>
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
-          </div>
-        </div>
-        <br>
         <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputFirstName" class="form-label">Nome</label>
+            <input type="email" class="form-control" id="inputFirstName" >
+          </div>
+          <div class="col-md-6">
+            <label for="inputLastName" class="form-label">Sobrenome</label>
+            <input type="email" class="form-control" id="inputLastName" >
+          </div>
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputEmail4" >
@@ -137,12 +132,6 @@
             <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
             <div class="help-block with-errors"></div>
         </div>
-        <p class="text-muted">
-            <strong>*</strong> Esses campos são obrigatórios.
-        </p>
-
-
-
           <div class="col-12">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -152,7 +141,7 @@
             </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
           </div>
         </form>
       </div>
