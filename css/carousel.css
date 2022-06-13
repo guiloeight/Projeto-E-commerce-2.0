@@ -24,8 +24,12 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: 32em;
+    max-width: 100%
+   
+    /* height: auto; */
   }
+
   
   
   /* MARKETING CONTENT
