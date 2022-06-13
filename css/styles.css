@@ -81,4 +81,10 @@
   -webkit-overflow-scrolling: touch;
 }
 
+h3 {
+  font-family:'Sensation';
+  src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
+  font-size: 43px;
+  color: #c0a9e2;
+}
 
