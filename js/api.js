@@ -1,29 +1,36 @@
+
+// Login api change address data using ViaCep oficial site of zip code in Brazil
+
 document.addEventListener("DOMContentLoaded", function(){
-    console.log('carregou');  
-  let cepMasked = IMask(document.getElementById('inputCEP'), {mask: '00000-000'});
-  
+  // atribute variable data from front end input from Zipcode    
+  let cepMasked = IMask(document.getElementById('inputZipcode'), {mask: '00000-000'});
+  //After mask field start function
   cepMasked.on("complete", function(){
-   
-  let cepPuro = cepMasked.unmaskedValue;
-  console.log(cepPuro);
-    
-    let urlBuscaCep = `https://viacep.com.br/ws/${cepPuro}/json/`;
-    //console.log(urlBuscaCep);
-    
-    fetch(urlBuscaCep)
+    // clean data from cepMasked variable
+  let cepPure = cepMasked.unmaskedValue;
+    //let variable urlBuscaCep access ViaCep oficial site of ZipCode in Brazil  
+    let urlSearchZipCode = `https://viacep.com.br/ws/${cepPure}/json/`;
+    //fetch in variable urlSearchZipCode
+    fetch(urlSearchZipCode)
+    //Json response
       .then(res => res.json())
-      .then(dadosCep => {
-          document.getElementById('inputState').value = dadosCep.uf;
-          document.getElementById('inputCity').value = dadosCep.localidade;
-          document.getElementById('inputDistrict').value = dadosCep.bairro;
-          document.getElementById('inputStreet').value = dadosCep.logradouro;
+      //Response fill field forms 
+      .then(dataZipCode => {
+        //Fill field State
+          document.getElementById('inputState').value = dataZipCode.uf;
+          //Fill field City
+          document.getElementById('inputCity').value = dataZipCode.localidade;
+          //Fill field District
+          document.getElementById('inputDistrict').value = dataZipCode.bairro;
+          //Fill field Street
+          document.getElementById('inputStreet').value = dataZipCode.logradouro;
+          //Focus in the field where is necessary fill data from user
           document.getElementById('inputNumber').focus();
-      });
-    
-    
+      });    
   })
-  
 });
+
+// End of api anddress
 
 $(function () {
 
