@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel-rtl/">
   
-  <!-- Conexão Boostrap -->
+  <!-- Conection Boostrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="/docs/5.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/bootstrap-social.css">
   <!-- Favicons -->
 
     <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/carousel.css" rel="stylesheet">
    
-    <!-- Estilo fontes -->
+  <!-- Font Style artist specific -->
    
    <style>
       @font-face {
@@ -40,15 +40,16 @@
       }
   </style>
 
-  <link rel="stylesheet" href="css/bootstrap-social.css">
+  
 
   <title>Feito por mim</title>
   
 </head>
-       
+       <!-- Initiation Header  -->
 <header>
   <nav class="navbar navbar-expand-md fixed-top bg-white">
     <div class="container-fluid">
+      <!-- First botton  -->
       <a class="navbar-brand" href="index.html">Feito por mim</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="تبديل التنقل">
         <span class="navbar-toggler-icon"></span>
@@ -56,22 +57,27 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item lead">
+            <!-- Second botton  -->
             <a class="nav-link " aria-current="page" href="/carrinho2.html">produtos</a>
           </li>
           <li class="nav-item lead">
+            <!-- Third botton  -->
             <a class="nav-link" href="#">artistas</a>
           </li>
           <li class="nav-item lead">
+            <!-- Forth botton -->
             <a class="nav-link"  href="cadastro.html">cadastre-se</a>
         </ul>
         <form class="d-flex" role="search">
+          <!-- Search field -->
           <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Procurar">
+          <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
         </form>
       </div>
     </div>
   </nav>
 </header>
-
+<!-- End Header  -->
 <main>
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -82,8 +88,8 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="img-responsive" src="assets/portadaHer1 (1).png" alt="">
-
+        <!-- First image from carousel -->
+        <img class="img-fluid" src="/assets/Image home/firstimageHer.png" alt="Desenho artistíco da Gabriela Cruz de um homem sentado e ao fundo escrito Her">
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Compre com nossos principais artistas</h1>
@@ -93,9 +99,8 @@
         </div>
       </div>
       <div class="carousel-item">
-       
-        <img class="img-responsive" src="assets/portadaMickey1.png" alt="">
-
+       <!--Second image from carousel  -->
+        <img class="img-responsive" src="assets/Image home/secondimageMickeyMagic.png" alt="Desenho artistíco da Gabriela Cruz do Mickey Mágico">
         <div class="container">
           <div class="carousel-caption">
             <h1>Faça seu cadastro</h1>
@@ -105,7 +110,8 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="img-responsive" src="assets/portadaSirenita1.png" alt="">
+        <!-- Third imagem from carousel -->
+        <img class="img-responsive" src="assets/Image home/thirdmMermaid.png" alt="Desenho artistíco da Gabriela Cruz da pequena sereia">
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>Venda sua arte</h1>
@@ -126,21 +132,20 @@
   </div>
 
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <!-- Container marketing with artist presentation  -->
 
   <div class="container marketing">
     <div>
       <h3>Conheça nossos artistas <hr class="opacity-0"></h3>
     </div>
   
-    <!-- TColunas abaixo do Carrosel com descrição dos artistas. -->
+    <!-- Coluns with description artistic -->
     
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
-          <img src="assets/artista1.png" class="card-img-top" alt="...">
+          <!-- First imagem and description artistic -->
+          <img class="img-fluid" src="assets/artista1.png" class="card-img-top" alt="Desenho artistíco da Gabriela com representação">
           <div class="card-body">
             <h5 class="card-title">Gabriela Cruz</h5>
             <p class="card-text">Descubra mais sobre essa artista Peruana</p>
@@ -150,7 +155,8 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="assets/artista2.png" class="card-img-top" alt="...">
+          <!-- Second imagem and description artistic -->
+          <img src="assets/artista2.png" class="card-img-top" alt="Homem segurando uma câmera profissional">
           <div class="card-body">
             <h5 class="card-title">Guilherme Batista</h5>
             <p class="card-text">Descubra mais sobre o artista Brasileiro</p>
@@ -160,7 +166,8 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="assets/artista3.png" class="card-img-top" alt="...">
+          <!-- Third imagem and description artistic -->
+          <img src="assets/artista3.png" class="card-img-top" alt="Baner com representação da Daniela Braga com seu nome escrito">
           <div class="card-body">
             <h5 class="card-title">Daniela Braga</h5>
             <p class="card-text">Descubra mais sobre essa artista Colombiana</p>
@@ -170,19 +177,20 @@
       </div>
       
     </div>
+    <!-- End description artistic -->
 
-
-    <!-- START THE FEATURETTES -->
+    <!-- Presentation of artistic works -->
 
     <hr class="featurette-divider border-primary border-2 opacity-55">
 
     <div class="row featurette">
       <div class="col-md-7">
+        <!-- First image and description of work -->
         <h2 class="featurette-heading fw-normal lh-1">Escudo Peruano<span class="text-muted"></span></h2>
         <p class="lead"> O Peru é um país da América do Sul que abriga uma parte da Floresta Amazônica e Machu Picchu, uma antiga cidade inca na cordilheira dos Andes. A região ao redor de Machu Picchu, que abrange o Vale Sagrado dos Incas, o Camino Inca e a cidade colonial de Cusco, é rica em sítios arqueológicos. Na costa árida do Pacífico fica Lima, a capital, com um centro colonial preservado e coleções importantes de arte pré-colombiana. </p>
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Imagens home/1.png" alt="">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Image Marketing Home/1.png" alt="Desenho artistíco do brasão Peruano">
       </div>
     </div>
 
@@ -190,11 +198,12 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
+        <!-- Second image and description of work -->
         <h2 class="featurette-heading fw-normal lh-1">Lisa Simpson<span class="text-muted"></span></h2>
         <p class="lead"> Lisa Marie Simpson é uma personagem fictícia da série animada de televisão Os Simpsons. Ela é a filha do meio e a mais talentosa da família Simpson. Dublado por Yeardley Smith, Lisa nasceu como um personagem no The Tracey Ullman Show curta "Good Night" em 19 de abril de 1987.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Imagens home/4.png" alt="">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Image Marketing Home/4.png" alt="Desenho artistíco da Lisa Simpson carregando livros">
 
       </div>
     </div>
@@ -203,26 +212,27 @@
 
     <div class="row featurette">
       <div class="col-md-7">
+        <!-- Third image and description of work -->
         <h2 class="featurette-heading fw-normal lh-1">Mickey Mouse<span class="text-muted"></span></h2>
         <p class="lead"> Mickey Mouse é um personagem de desenho animado e que se tornou o símbolo da Walt Disney Company. O personagem foi criado em 1928 por Walt Disney e o desenhista Ub Iwerks e dublado por Walt Disney.</p>
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Imagens home/5.png" alt="">
-
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/Image Marketing Home/5.png" alt="Desenho artistíco do Mickey Mágico">
       </div>
     </div>
 
     <hr class="featurette-divider border-primary border-2 opacity-55">
 
-    <!-- /END THE FEATURETTES -->
+    <!-- End of artistic works -->
 
-  </div><!-- /.container -->
+  </div>
+   <!-- End container marketing -->
 
 
-  <!-- FOOTER -->
+  <!-- Foother with social media -->
   <footer class="container">
     <p class="float-end">
-     <!-- Conexão de redes sociais com imagens e links -->
+     <!-- Conection social media and banners -->
       <a href="https://www.facebook.com/"><img src="/assets/Icones/facebook.png" alt="Logo do Facebook"></a>
      <a href="https://www.instagram.com/"><img src="/assets/Icones/instagram.png" alt="Logo do Facebook"></a>
      <a href="https://www.linkedin.com/"><img src="/assets/Icones/Linkedin.png" alt="Logo do Facebook"></a>
@@ -230,7 +240,7 @@
     <p>&copy; 2017–2022 Feito por mim Company, Inc. &middot;</p>
 
   </footer>
-  <!-- Div Vlibras -->
+  <!-- Accessibility plugin governamental(VLibras) -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -238,23 +248,13 @@
     </div>
   </div>
 
-  <!-- Conexão de Script VLibras -->
+  <!-- Conection VLibras -->
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-  <!-- Conexão Bootstrap -->
+  <!-- Conection Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    
-  </table>
+
   </body>
 
 </html>
