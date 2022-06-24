@@ -5,19 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel-rtl/">
+  <link rel="icon" href="images/favicon.png" />
   
+  <!-- Conexão Boostrap -->
 
-   <!-- Boostrap CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="/docs/5.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+  <!-- Favicons -->
+
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
 
   <!-- CSS -->
 
-    <link rel="stylesheet" href="css/carrinho.css">
-    
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/stylepizza.css" rel="stylesheet">
    
-    <!-- Estilo fontes -->
+    <!-- Font Style -->
    
    <style>
       @font-face {
@@ -33,180 +43,182 @@
 
   <link rel="stylesheet" href="css/bootstrap-social.css">
 
-  <title>Produtos</title>
+  <title>Feito por mim</title>
   
 </head>
-
-<body>
-    <header class=container-fluid position-sticky top-10>
-    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Produtos</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrinho</a>
-        </li>
-        
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-            1
-        </div>
-        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-       
-        <h2 class="h4 text-primary">Produtos</h2>
-       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-        
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 rounded" style="width: 25rem;">
-                <img src="assets/Imagens home/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Escudo Peruano</h5>
-                  <p class="card-text">Escudo Peruano</p>
-                  <h5 class="text-primary">Preco: <span class="precio">$ 5</span></h5>
-                  <div class="d-grid gap-2">
-                  <button class="btn btn-primary button">Add ao carrinho</button>
-                </div>
-                </div>
-              </div>
-        </div>
-               
-            
-        </div>
-       </div>
-        
-        </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            <br>
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Produtos</th>
-                    <th scope="col">Preço</th>
-                    <th scope="col">Quantidade</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td class="table__produtos">
-                    <img src="/assets/sirenita carrito.jpg" alt="">
-                        
-                    </td>
-                    <td class="table__preço"><p>$ 5</p></td>
-                    
-                    <td class="table__quantidade">
-                        <input type="number" min="1" value="1">
-                        <button class="delete btn btn-danger">x</button>
-                    </td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-        </div>
+<header>
+  <nav class="navbar navbar-expand-md fixed-top bg-white">
+    <div class="container-fluid">
+      <!-- First botton  -->
+      <a class="navbar-brand" href="index.html">Feito por mim</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="تبديل التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item lead">
+            <!-- Second botton  -->
+            <a class="nav-link " aria-current="page" href="/carrinho.html">produtos</a>
+          </li>
+          <li class="nav-item lead">
+            <!-- Third botton  -->
+            <a class="nav-link" href="#">artistas</a>
+          </li>
+          <li class="nav-item lead">
+            <!-- Forth botton -->
+            <a class="nav-link"  href="cadastro.html">cadastre-se</a>
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- Search field -->
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Procurar">
+          <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+        </form>
       </div>
-    </header>
-   
-    <footer class="p-3 mt-5">
-        
-        <p class="text-center m-0 text-muted">Feito Por Mim - 2022</p>
+        <!-- Shopping cart botton -->
+      <div class="menu-openner"><span>0</span>🛒</div>
+    </div>
+  </nav>
+  
+</header>
 
-    </footer>
+<!-- End Header  -->
+
+<br>
+<br>
+<br>
+<body>
+
+ 
+<br>
+<br>
+   <!-- modelos de pizza na lista e no carrinho -->
+   <div class="models">
+
+    <!-- pizza na lista -->
+    <div class="pizza-item">
+        <a href="">
+            <div class="pizza-item--img"><img src="" /></div>
+            <div class="pizza-item--add">+</div>
+        </a>
+        <div class="pizza-item--price">R$ --</div>
+        <div class="pizza-item--name">--</div>
+        <div class="pizza-item--desc">--</div>
+    </div>
+
+    <!-- pizza no carrinho -->
+    <div class="cart--item">
+        <img src="" />
+        <div class="cart--item-nome">--</div>
+        <div class="cart--item--qtarea">
+            <button class="cart--item-qtmenos">-</button>
+            <div class="cart--item--qt">1</div>
+            <button class="cart--item-qtmais">+</button>
+        </div>
+    </div>
+
+</div>
+<!-- /models -->
+
+<!-- .menu-openner aparecera no modo mobile -->
+
+<!-- /menu-openner -->
+
+<!-- conteudo principal -->
+<main>
     
+    <h2>nossos produtos</h2>
+
+    <div class="pizza-area"></div>
+</main>
+<!-- /conteudo principal -->
+
+<!-- aside do carrinho -->
+<aside>
+    <div class="cart--area">
+        <div class="menu-closer">❌</div>
+        <br>
+        <h1>Seus produtos</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+                <span>Desconto</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--finalizar">Finalizar a compra</div>
+        </div>
+    </div>
+</aside>
+<!-- /aside do carrinho -->
+
+<!-- janela modal .pizzaWindowArea -->
+<div class="pizzaWindowArea">
+    <div class="pizzaWindowBody">
+        <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+        <div class="pizzaBig">
+            <img src="" />
+        </div>
+        <div class="pizzaInfo">
+            <h1>--</h1>
+            <div class="pizzaInfo--desc">--</div>
+            <div class="pizzaInfo--sizearea">
+                <div class="pizzaInfo--sector">Tamanho</div>
+                <div class="pizzaInfo--sizes">
+                    <div data-key="P" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                    <div data-key="M" class="pizzaInfo--size">MÉDIA <span>--</span></div>
+                    <div data-key="G" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+                </div>
+            </div>
+            <div class="pizzaInfo--pricearea">
+                <div class="pizzaInfo--sector">Preço</div>
+                <div class="pizzaInfo--price">
+                    <div class="pizzaInfo--actualPrice">R$ --</div>
+                    <div class="pizzaInfo--qtarea">
+                        <button class="pizzaInfo--qtmenos">-</button>
+                        <div class="pizzaInfo--qt">1</div>
+                        <button class="pizzaInfo--qtmais">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+            <div class="pizzaInfo--cancelButton">Cancelar</div>
+        </div>
+    </div>
+</div>
+<!-- /janela modal .pizzaWindowArea -->
+
+
+
+  
+</body>
+
+<!-- Div Vlibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<!-- Conexão de Script VLibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="/js/script.js"></script>
+<script src="/js/appcarrinho.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
 </body>
 </html>

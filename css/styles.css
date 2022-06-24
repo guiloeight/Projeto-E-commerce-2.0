@@ -8,14 +8,14 @@
 .nav-link {
   font-family:'Sensation';
   src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
-  font-size: 15px;
+  font-size: 20px;
   color: #c0a9e2;
 }
 
 .navbar a{
   font-family:'Sensation';
   src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
-  font-size: 30px;
+  font-size: 50px;
   color: #c0a9e2;
 
 
@@ -84,7 +84,7 @@
 h3 {
   font-family:'Sensation';
   src: url(assets/Sensations\ and\ Qualities.ttf) format('truetype');
-  font-size: 43px;
+  font-size: 60px;
   color: #c0a9e2;
 }
 
