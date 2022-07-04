@@ -56,6 +56,7 @@ header h1 {
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+    display:flex;
 }
 
 .menu-openner span {
@@ -105,13 +106,13 @@ h2 {
     color: #0067ff  ;
 }
 
-.pizza-area {
+.product-area {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     border-radius: 8px;
 }
 
-.pizza-item {
+.product-item {
     text-align: center;
     max-width:250px;
     font-family: 'OpenSans';
@@ -119,14 +120,14 @@ h2 {
     margin:0 auto 50px auto;
 }
 
-.pizza-item a {
+.product-item a {
     display:flex;
     flex-direction: column;
     align-items:center;
     text-decoration: none;
 }
 
-.pizza-item--img {
+.product-item--img {
     width:200px;
     height:200px;
     background-color:#EEE;
@@ -134,17 +135,17 @@ h2 {
     box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
-.pizza-item--img:hover {
+.product-item--img:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.pizza-item--img img {
+.product-item--img img {
     width:100%;
     height:auto;
 }
 
-.pizza-item--add {
+.product-item--add {
     width:50px;
     height:50px;
     line-height:50px;
@@ -161,32 +162,32 @@ h2 {
 }
 
 
-.pizza-item a:hover .pizza-item--add {
+.product-item a:hover .pizza-item--add {
     background-color:#ffa4d8;
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.pizza-item--price {
+.product-item--price {
     font-size:15px;
     color:#333;
     margin-top:5px;
 }
 
-.pizza-item--name {
+.product-item--name {
     font-size:20px;
     font-family: 'OpenSans';
     color: #0067ff;
     margin-top:5px;
 }
 
-.pizza-item--desc {
+.product-item--desc {
     font-size:13px;
     color:#555;
     margin-top:10px;
 }
 
-.pizzaWindowArea {
+.productWindowArea {
     position:fixed;
     left:0;
     top:0;
@@ -200,7 +201,7 @@ h2 {
     overflow-y:auto;
 }
 
-.pizzaWindowBody {
+.productWindowBody {
     width:900px;
     background-color:#FFF;
     border-radius:10px;
@@ -209,43 +210,43 @@ h2 {
     margin:20px 0px;
 }
 
-.pizzaBig {
+.productBig {
     flex:1;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.pizzaBig--back {
+.productBig--back {
     position:absolute;
     width:30px;
     height:30px;
     background-color:#000;
 }
 
-.pizzaBig img {
+.productBig img {
     height:400px;
     width:auto;
 }
 
-.pizzaInfo {
+.productInfo {
     flex:1;
     font-family:'Hepta Slab', Helvetica, Arial;
     padding-bottom:50px;
 }
 
-.pizzaInfo h1 {
+.productInfo h1 {
     margin-top:50px;
 }
 
-.pizzaInfo .pizzaInfo--desc {
+.productInfo .pizzaInfo--desc {
     font-size:15px;
     color:#999;
     margin-top:10px;
     font-family:'Lato',Helvetica,Arial;
 }
 
-.pizzaInfo--sector {
+.productInfo--sector {
     color:#CCC;
     text-transform: uppercase;
     font-size:14px;
@@ -253,13 +254,13 @@ h2 {
     margin-bottom:10px;
 }
 
-.pizzaInfo--sizes {
+.productInfo--sizes {
     display:inline-flex;
     border-radius:10px;
     overflow:hidden;
 }
 
-.pizzaInfo--size {
+.productInfo--size {
     padding:10px 15px;
     color:#000;
     background-color:#EEE;
@@ -268,45 +269,45 @@ h2 {
     cursor:pointer;
 }
 
-.pizzaInfo--size:hover {
+.productInfo--size:hover {
     background-color:#CCC;
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.pizzaInfo--size.selected {
+.productInfo--size.selected {
     background-color:#d32f2f;
     color:#FFF;
 }
 
-.pizzaInfo--size.selected span {
+.productInfo--size.selected span {
     color:#D6D6D6;
 }
 
-.pizzaInfo--size span {
+.productInfo--size span {
     font-size:12px;
     color:#999;
     font-weight: normal;
 }
 
-.pizzaInfo--price {
+.productInfo--price {
     display:flex;
     align-items:center;
 }
 
-.pizzaInfo--actualPrice {
+.productInfo--actualPrice {
     font-size:28px;
     margin-right:30px;
 }
 
-.pizzaInfo--qtarea {
+.productInfo--qtarea {
     display:inline-flex;
     background-color:#EEE;
     border-radius:10px;
     height:30px;
 }
 
-.pizzaInfo--qtarea button {
+.productInfo--qtarea button {
     border:0;
     background-color:transparent;
     font-size:17px;
@@ -316,7 +317,7 @@ h2 {
     color:#333;
 }
 
-.pizzaInfo--qt {
+.productInfo--qt {
     line-height: 30px;
     font-size: 12px;
     font-weight: bold;
@@ -324,7 +325,7 @@ h2 {
     color:#000;
 }
 
-.pizzaInfo--addButton {
+.productInfo--addButton {
     margin-top:30px;
     padding:20px 30px;
     border-radius:20px;
@@ -335,16 +336,16 @@ h2 {
     margin-right:30px;
 }
 
-.pizzaInfo--addButton:hover {
+.productInfo--addButton:hover {
     background-color:#32a345;
 }
 
-.pizzaInfo--cancelButton {
+.productInfo--cancelButton {
     display:inline-block;
     cursor:pointer;
 }
 
-.pizzaInfo--cancelMobileButton {
+.productInfo--cancelMobileButton {
     display:none;
     height:40px;
     text-align:center;
@@ -433,7 +434,7 @@ h2 {
 }
 
 @media (max-width:1000px) {
-    .pizza-area {
+    .product-area {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -442,10 +443,10 @@ h2 {
     body {
         flex-direction: column;
     }
-    .pizza-area {
+    .product-area {
         display:block;
     }
-    .pizza-item {
+    .product-item {
         max-width:100%;
     }
     header {
@@ -476,12 +477,12 @@ h2 {
         display:block;
     }
 
-    .pizzaWindowArea {
+    .productWindowArea {
         justify-content:flex-start;
         align-items: flex-start;
     }
 
-    .pizzaWindowBody {
+    .productWindowBody {
         width:100vw;
         display:block;
         padding:20px;
@@ -490,41 +491,41 @@ h2 {
         margin:0;
     }
 
-    .pizzaBig img {
+    .productBig img {
         width: 75%;
         height: auto;
     }
 
-    .pizzaInfo h1 {
+    .productInfo h1 {
         margin-top:20px;
     }
 
-    .pizzaInfo--qtarea {
+    .productInfo--qtarea {
         height:60px;
     }
     
-    .pizzaInfo--qtarea button {
+    .productInfo--qtarea button {
         font-size:25px;
         padding:0px 25px;
     }
 
-    .pizzaInfo--qt {
+    .productInfo--qt {
         line-height: 60px;
         font-size:20px;
     }
 
-    .pizzaInfo--addButton {
+    .productInfo--addButton {
         font-size:20px;
         display:block;
         text-align:center;
         margin:30px auto;
     }
 
-    .pizzaInfo--cancelButton {
+    .productInfo--cancelButton {
         display:none;
     }
 
-    .pizzaInfo--cancelMobileButton {
+    .productInfo--cancelMobileButton {
         display:block;
     }
 

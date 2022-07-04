@@ -1,4 +1,4 @@
-let pizzaJson = [
+let productJson = [
     {
         id: 1,
         name: 'Escudo peruano',

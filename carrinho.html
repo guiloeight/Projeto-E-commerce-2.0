@@ -25,7 +25,7 @@
   <!-- CSS -->
 
     <link rel="stylesheet" href="css/styles.css">
-    <link href="css/stylepizza.css" rel="stylesheet">
+    <link href="css/styleproduct.css" rel="stylesheet">
    
     <!-- Font Style -->
    
@@ -74,40 +74,34 @@
           <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
         </form>
       </div>
-        <!-- Shopping cart botton -->
+      <br>
+        <!-- Shopping cart botton   -->
       <div class="menu-openner"><span>0</span>🛒</div>
     </div>
   </nav>
-  
 </header>
 
 <!-- End Header  -->
 
-<br>
-<br>
-<br>
-<body>
 
- 
-<br>
-<br>
-   <!-- modelos de pizza na lista e no carrinho -->
+   <!-- Models -->
    <div class="models">
 
-    <!-- pizza na lista -->
-    <div class="pizza-item">
-        <a href="">
-            <div class="pizza-item--img"><img src="" /></div>
-            <div class="pizza-item--add">+</div>
+    <!-- List of products -->
+    <div class="product-item">
+      <!-- Assing image  -->
+      <a href="">
+            <div class="product-item--img"><img src="" alt=""></div>
+            <div class="product-item--add">+</div>
         </a>
-        <div class="pizza-item--price">R$ --</div>
-        <div class="pizza-item--name">--</div>
-        <div class="pizza-item--desc">--</div>
+        <div class="product-item--price">R$ --</div>
+        <div class="product-item--name">--</div>
+        <div class="product-item--desc">--</div>
     </div>
 
     <!-- pizza no carrinho -->
     <div class="cart--item">
-        <img src="" />
+        <img src="" alt="">
         <div class="cart--item-nome">--</div>
         <div class="cart--item--qtarea">
             <button class="cart--item-qtmenos">-</button>
@@ -128,7 +122,7 @@
     
     <h2>nossos produtos</h2>
 
-    <div class="pizza-area"></div>
+    <div class="product-area"></div>
 </main>
 <!-- /conteudo principal -->
 
@@ -159,36 +153,36 @@
 <!-- /aside do carrinho -->
 
 <!-- janela modal .pizzaWindowArea -->
-<div class="pizzaWindowArea">
-    <div class="pizzaWindowBody">
-        <div class="pizzaInfo--cancelMobileButton">Voltar</div>
-        <div class="pizzaBig">
-            <img src="" />
+<div class="productWindowArea">
+    <div class="productWindowBody">
+        <div class="productInfo--cancelMobileButton">Voltar</div>
+        <div class="productBig">
+            <img src="" alt="">
         </div>
-        <div class="pizzaInfo">
+        <div class="productInfo">
             <h1>--</h1>
-            <div class="pizzaInfo--desc">--</div>
-            <div class="pizzaInfo--sizearea">
-                <div class="pizzaInfo--sector">Tamanho</div>
-                <div class="pizzaInfo--sizes">
-                    <div data-key="P" class="pizzaInfo--size">PEQUENA <span>--</span></div>
-                    <div data-key="M" class="pizzaInfo--size">MÉDIA <span>--</span></div>
-                    <div data-key="G" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+            <div class="productInfo--desc">--</div>
+            <div class="productInfo--sizearea">
+                <div class="productInfo--sector">Tamanho</div>
+                <div class="productInfo--sizes">
+                    <div data-key="P" class="productInfo--size">PEQUENA <span>--</span></div>
+                    <div data-key="M" class="productInfo--size">MÉDIA <span>--</span></div>
+                    <div data-key="G" class="productInfo--size selected">GRANDE <span>--</span></div>
                 </div>
             </div>
-            <div class="pizzaInfo--pricearea">
-                <div class="pizzaInfo--sector">Preço</div>
-                <div class="pizzaInfo--price">
-                    <div class="pizzaInfo--actualPrice">R$ --</div>
-                    <div class="pizzaInfo--qtarea">
-                        <button class="pizzaInfo--qtmenos">-</button>
-                        <div class="pizzaInfo--qt">1</div>
-                        <button class="pizzaInfo--qtmais">+</button>
+            <div class="productInfo--pricearea">
+                <div class="productInfo--sector">Preço</div>
+                <div class="productInfo--price">
+                    <div class="productInfo--actualPrice">R$ --</div>
+                    <div class="productInfo--qtarea">
+                        <button class="productInfo--qtmenos">-</button>
+                        <div class="productInfo--qt">1</div>
+                        <button class="productInfo--qtmais">+</button>
                     </div>
                 </div>
             </div>
-            <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
-            <div class="pizzaInfo--cancelButton">Cancelar</div>
+            <div class="productInfo--addButton">Adicionar ao carrinho</div>
+            <div class="productInfo--cancelButton">Cancelar</div>
         </div>
     </div>
 </div>
